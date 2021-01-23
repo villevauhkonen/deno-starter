@@ -25,3 +25,11 @@ Deno.test("parseBearerToken throw error with invalid data", () => {
     "Header format not valid",
   );
 });
+
+Deno.test("parseBearerToken throw error with invalid data", () => {
+  assertThrows(
+    () => parseBearerToken("Bearer xyz zyx"),
+    Error,
+    "Header format not valid",
+  );
+});
