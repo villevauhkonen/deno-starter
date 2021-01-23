@@ -1,0 +1,4 @@
+scripts:
+  start: deno run --allow-net index.ts
+  format: deno fmt 
+  test: deno test
